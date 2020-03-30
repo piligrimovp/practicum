@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using System.Linq;
 using System.Collections.Generic;
 
 namespace lab2.Controllers
@@ -19,9 +20,13 @@ namespace lab2.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Client> ClientsList()
+        public ActionResult<string> ClientsList()
         {
-            return db.Clients;
+            return JsonConvert.SerializeObject(db.Clients.Select(x => new { 
+                x.Id,
+                x.Name,
+                x.Age
+            }).ToList());
         }
 
         [HttpGet("{id}")]
@@ -29,7 +34,12 @@ namespace lab2.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ActionResult<string> GetClient(int id)
         {
-            Client client = db.Clients.Find(id);
+            var client = db.Clients.Where(x => x.Id == id)
+                .Select(x => new { 
+                    x.Id,
+                    x.Name,
+                    x.Age
+                }).FirstOrDefault();
             if(client == null)
             {
                 return NotFound();
@@ -75,8 +85,14 @@ namespace lab2.Controllers
             Client client = db.Clients.Find(id);
             if (client != null)
             {
-                client.Name = name;
-                client.Age  = age;
+                if(name != null)
+                {
+                    client.Name = name;
+                }
+                if(age > 0)
+                {
+                    client.Age = age;
+                }
                 if(TryValidateModel(client))
                 {
                     db.Clients.Update(client);

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace lab2.Controllers
 {
@@ -19,9 +20,13 @@ namespace lab2.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Service> ServicesList()
+        public ActionResult<string> ServicesList()
         {
-            return db.Services;
+            return JsonConvert.SerializeObject(db.Services.Select(x => new {
+                x.Id,
+                x.Name,
+                x.Price
+            }).ToList());
         }
 
         [HttpGet("{id}")]
@@ -29,7 +34,12 @@ namespace lab2.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ActionResult<string> GetService(int id)
         {
-            Service service = db.Services.Find(id);
+            var service = db.Services.Where(x => x.Id == id)
+                .Select(x => new { 
+                    x.Id,
+                    x.Name,
+                    x.Price
+                });
             if (service == null)
             {
                 return NotFound();
@@ -75,7 +85,10 @@ namespace lab2.Controllers
             Service service = db.Services.Find(id);
             if (service != null)
             {
-                service.Name = name;
+                if(name != null)
+                {
+                    service.Name = name;
+                }
                 service.Price = price;
                 if (TryValidateModel(service))
                 {

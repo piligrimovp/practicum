@@ -1,0 +1,79 @@
+[
+    {
+    	"url": "https://localhost:44342/bd/clients/",
+        "response": '[{"Id":1,"Name":"Клиент 1","Age":20},{"Id":2,"Name":"Клиент 2 ","Age":23},{"Id":3,"Name":"Клиент 3","Age":31},{"Id":4,"Name":"Клиент 4","Age":11}]',
+        "method": "GET"
+    },
+    {
+    	"url": "https://localhost:44342/bd/clients/1",
+        "response": '{"id":1,"name":"Клиент 1","age":20}',
+        "method": "GET"
+    },
+    {
+    	"url": "https://localhost:44342/bd/clients/add?name=aaaaaaaaa&age=100",
+        "response": {},
+        "method": "GET"
+    },
+    {
+    	"url": "https://localhost:44342/bd/clients/delete/1",
+        "response": {},
+        "method": "GET"
+    },
+    {
+    	"url": "https://localhost:44342/bd/clients/upd?id=1&name=aa",
+        "response": {},
+        "method": "GET"
+    },
+    
+    {
+    	"url": "https://localhost:44342/bd/services/",
+        "response": '[{"id":1,"name":"Установить Windows","price":500.0},{"id":2,"name":"Почистить Windows","price":500.0},{"id":3,"name":"Установить игрульки","price":300.0},{"id":4,"name":"Почистить от пыли","price":600.0}]',
+        "method": "GET"
+    },
+    {
+    	"url": "https://localhost:44342/bd/services/1",
+        "response": '{"id":1,"name":"Установить Windows","price":500.0}',
+        "method": "GET"
+    },
+    {
+    	"url": "https://localhost:44342/bd/services/add?name=test&price=100",
+        "response": {},
+        "method": "GET"
+    },
+    {
+    	"url": "https://localhost:44342/bd/services/delete/1",
+        "response": {},
+        "method": "GET"
+    },
+    {
+    	"url": "https://localhost:44342/bd/services/upd?id=1&name=newname&price=101",
+        "response": {},
+        "method": "GET"
+    },
+    
+    {
+    	"url": "https://localhost:44342/bd/orders/",
+        "response": '[{"Id":1,"ClientId":1,"ClientName":"Клиент 1","ServiceId":1,"ServiceName":"uxy","ServicePrice":0.0,"Count":10,"Date":"2020-03-20T00:00:00"},{"Id":2,"ClientId":1,"ClientName":"Клиент 1","ServiceId":2,"ServiceName":"Почистить Windows","ServicePrice":500.0,"Count":1,"Date":"2020-03-21T00:00:00"},{"Id":3,"ClientId":2,"ClientName":"Клиент 2 ","ServiceId":3,"ServiceName":"Установить игрульки","ServicePrice":300.0,"Count":1,"Date":"2020-03-21T10:10:00"},{"Id":4,"ClientId":3,"ClientName":"Клиент 3","ServiceId":4,"ServiceName":"Почистить от пыли","ServicePrice":600.0,"Count":2,"Date":"2020-03-22T12:15:00"}]',
+        "method": "GET"
+    },
+    {
+    	"url": "https://localhost:44342/bd/orders/1",
+        "response": '{"id":1,"clientId":1,"clientName":"Клиент 1","serviceId":1,"serviceName":"uxy","servicePrice":0.0,"count":10,"date":"2020-03-20T00:00:00"}',
+        "method": "GET"
+    },
+    {
+    	"url": "https://localhost:44342/bd/orders/add?client=3&service=2&count=1",
+        "response": {},
+        "method": "GET"
+    },
+    {
+    	"url": "https://localhost:44342/bd/orders/delete/1",
+        "response": {},
+        "method": "GET"
+    },
+    {
+    	"url": "https://localhost:44342/bd/orders/upd?id=5&count=10&client=3&service=2",
+        "response": {},
+        "method": "GET"
+    },
+]
