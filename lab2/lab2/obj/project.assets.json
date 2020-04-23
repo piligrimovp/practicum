@@ -2589,6 +2589,56 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Microsoft.VisualStudio.Validation/15.5.31": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.VisualStudio.Validation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.VisualStudio.Validation.dll": {}
+        },
+        "resource": {
+          "lib/netstandard2.0/cs/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.0/de/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/es/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/fr/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/it/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/ja/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/ko/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/pl/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.0/pt-BR/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/ru/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/tr/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.0/zh-Hans/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hant/Microsoft.VisualStudio.Validation.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
       "Microsoft.Win32.Registry/4.5.0": {
         "type": "package",
         "dependencies": {
@@ -2877,6 +2927,26 @@
           }
         }
       },
+      "SoapCore/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http": "2.1.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.0",
+          "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
+          "Microsoft.VisualStudio.Validation": "15.5.31",
+          "System.CodeDom": "4.6.0",
+          "System.IO.Pipelines": "4.6.0",
+          "System.ServiceModel.Http": "4.6.0",
+          "System.ServiceModel.Primitives": "4.6.0",
+          "System.Xml.XmlSerializer": "4.3.0"
+        },
+        "compile": {
+          "lib/netcoreapp2.1/SoapCore.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/SoapCore.dll": {}
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2896,6 +2966,15 @@
         },
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "System.CodeDom/4.6.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.CodeDom.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {}
         }
       },
       "System.Collections/4.3.0": {
@@ -3289,13 +3368,13 @@
           "lib/netstandard1.3/System.IO.FileSystem.Primitives.dll": {}
         }
       },
-      "System.IO.Pipelines/4.5.0": {
+      "System.IO.Pipelines/4.6.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard1.3/System.IO.Pipelines.dll": {}
+          "ref/netcoreapp2.0/System.IO.Pipelines.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp2.1/System.IO.Pipelines.dll": {}
+          "lib/netstandard2.0/System.IO.Pipelines.dll": {}
         }
       },
       "System.Linq/4.3.0": {
@@ -3496,6 +3575,20 @@
           "lib/netstandard1.3/System.Private.DataContractSerialization.dll": {}
         }
       },
+      "System.Private.ServiceModel/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Reflection.DispatchProxy": "4.5.0",
+          "System.Security.Cryptography.Xml": "4.5.0",
+          "System.Security.Principal.Windows": "4.5.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Private.ServiceModel.dll": {}
+        }
+      },
       "System.Reflection/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -3507,6 +3600,15 @@
         },
         "compile": {
           "ref/netstandard1.5/System.Reflection.dll": {}
+        }
+      },
+      "System.Reflection.DispatchProxy/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Reflection.DispatchProxy.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/System.Reflection.DispatchProxy.dll": {}
         }
       },
       "System.Reflection.Emit/4.3.0": {
@@ -4057,6 +4159,33 @@
           }
         }
       },
+      "System.ServiceModel.Http/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Private.ServiceModel": "4.6.0",
+          "System.ServiceModel.Primitives": "4.6.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.ServiceModel.Http.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.ServiceModel.Http.dll": {}
+        }
+      },
+      "System.ServiceModel.Primitives/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Private.ServiceModel": "4.6.0"
+        },
+        "compile": {
+          "ref/netcoreapp2.1/System.ServiceModel.Primitives.dll": {},
+          "ref/netcoreapp2.1/System.ServiceModel.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/System.ServiceModel.Primitives.dll": {},
+          "lib/netcoreapp2.1/System.ServiceModel.dll": {}
+        }
+      },
       "System.Text.Encoding/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -4299,7 +4428,7 @@
           "System.Xml.XmlDocument": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
@@ -6943,6 +7072,49 @@
         "version.txt"
       ]
     },
+    "Microsoft.VisualStudio.Validation/15.5.31": {
+      "sha512": "AOmvJTT4CpamJ2A6J+PBrhKPfs2HXi/MJVxN/QlViewjI4XZDrt/yp3NMto+OOgB25jDnt9IIdNTkjpNBUpXmw==",
+      "type": "package",
+      "path": "microsoft.visualstudio.validation/15.5.31",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.VisualStudio.Validation.dll",
+        "lib/netstandard2.0/Microsoft.VisualStudio.Validation.pdb",
+        "lib/netstandard2.0/Microsoft.VisualStudio.Validation.xml",
+        "lib/netstandard2.0/cs/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.0/de/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.0/es/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.0/fr/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.0/it/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.0/ja/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.0/ko/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.0/pl/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.0/pt-BR/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.0/ru/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.0/tr/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.0/zh-Hans/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.0/zh-Hant/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.1/Microsoft.VisualStudio.Validation.dll",
+        "lib/netstandard2.1/Microsoft.VisualStudio.Validation.pdb",
+        "lib/netstandard2.1/Microsoft.VisualStudio.Validation.xml",
+        "lib/netstandard2.1/cs/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.1/de/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.1/es/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.1/fr/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.1/it/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.1/ja/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.1/ko/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.1/pl/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.1/pt-BR/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.1/ru/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.1/tr/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.1/zh-Hans/Microsoft.VisualStudio.Validation.resources.dll",
+        "lib/netstandard2.1/zh-Hant/Microsoft.VisualStudio.Validation.resources.dll",
+        "microsoft.visualstudio.validation.15.5.31.nupkg.sha512",
+        "microsoft.visualstudio.validation.nuspec"
+      ]
+    },
     "Microsoft.Win32.Registry/4.5.0": {
       "sha512": "+FWlwd//+Tt56316p00hVePBCouXyEzT86Jb3+AuRotTND0IYn0OO3obs1gnQEs/txEnt+rF2JBGLItTG+Be6A==",
       "type": "package",
@@ -7446,6 +7618,21 @@
         "version.txt"
       ]
     },
+    "SoapCore/1.0.0": {
+      "sha512": "eML/0yGOyKNlMGga9oYY7PAHhWC2zKeWxm3zTbG63bKgw8abAfNqSz34cfKL+zwZxHU97IfMQHRkCpbJK/O5UQ==",
+      "type": "package",
+      "path": "soapcore/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp2.1/SoapCore.dll",
+        "lib/netcoreapp3.0/SoapCore.dll",
+        "lib/netcoreapp3.1/SoapCore.dll",
+        "lib/netstandard2.0/SoapCore.dll",
+        "soapcore.1.0.0.nupkg.sha512",
+        "soapcore.nuspec"
+      ]
+    },
     "System.AppContext/4.3.0": {
       "sha512": "fKC+rmaLfeIzUhagxY17Q9siv/sPrjjKcfNg1Ic8IlQkZLipo8ljcaZQu4VtI4Jqbzjc2VTjzGLF6WmsRXAEgA==",
       "type": "package",
@@ -7525,6 +7712,29 @@
         "ref/uap10.0.16299/_._",
         "system.buffers.4.5.0.nupkg.sha512",
         "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.CodeDom/4.6.0": {
+      "sha512": "ArWGZOxPhOaJUd4YgvbTxGZDbVDJHPAOQNiJIpbRDPW6v2NT5xkallQv1zpu8Rwwb5Z3iZ1jwWA4gSQuWgR+jw==",
+      "type": "package",
+      "path": "system.codedom/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.CodeDom.dll",
+        "lib/net461/System.CodeDom.xml",
+        "lib/netstandard2.0/System.CodeDom.dll",
+        "lib/netstandard2.0/System.CodeDom.xml",
+        "ref/net461/System.CodeDom.dll",
+        "ref/net461/System.CodeDom.xml",
+        "ref/netstandard2.0/System.CodeDom.dll",
+        "ref/netstandard2.0/System.CodeDom.xml",
+        "system.codedom.4.6.0.nupkg.sha512",
+        "system.codedom.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -8813,23 +9023,24 @@
         "system.io.filesystem.primitives.nuspec"
       ]
     },
-    "System.IO.Pipelines/4.5.0": {
-      "sha512": "1GB2tHmb/qRzCF6NX7+1LU6/IKPt8QKm6hHt7Vmyt/olg3XJIwwRzNwdfG0gKgPzNTIj0eOFk6UpVHrVMDrY0w==",
+    "System.IO.Pipelines/4.6.0": {
+      "sha512": "xOqFH7Uiemd/QzUl2Di23cZCrc2CmgijeTDyFKDT8+jjpH+ynf7WoLUExY2AYGyGBjGL5Kn6DZScnqeg91zQOQ==",
       "type": "package",
-      "path": "system.io.pipelines/4.5.0",
+      "path": "system.io.pipelines/4.6.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/netcoreapp2.1/System.IO.Pipelines.dll",
-        "lib/netcoreapp2.1/System.IO.Pipelines.xml",
+        "lib/netcoreapp3.0/System.IO.Pipelines.dll",
+        "lib/netcoreapp3.0/System.IO.Pipelines.xml",
         "lib/netstandard1.3/System.IO.Pipelines.dll",
         "lib/netstandard1.3/System.IO.Pipelines.xml",
         "lib/netstandard2.0/System.IO.Pipelines.dll",
         "lib/netstandard2.0/System.IO.Pipelines.xml",
-        "ref/netstandard1.3/System.IO.Pipelines.dll",
-        "system.io.pipelines.4.5.0.nupkg.sha512",
+        "ref/netcoreapp2.0/System.IO.Pipelines.dll",
+        "ref/netcoreapp2.0/System.IO.Pipelines.xml",
+        "system.io.pipelines.4.6.0.nupkg.sha512",
         "system.io.pipelines.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -9381,6 +9592,22 @@
         "system.private.datacontractserialization.nuspec"
       ]
     },
+    "System.Private.ServiceModel/4.6.0": {
+      "sha512": "8iD5mvu76p3L9tUzmh1Iwgh51XRGIBKfKZhnfUoORjqDCabKugQOmne0SWzuU0ksNW1d6fTn6zEFmig8AbzI3g==",
+      "type": "package",
+      "path": "system.private.servicemodel/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard2.0/System.Private.ServiceModel.dll",
+        "lib/netstandard2.0/System.Private.ServiceModel.pdb",
+        "ref/netstandard2.0/_._",
+        "system.private.servicemodel.4.6.0.nupkg.sha512",
+        "system.private.servicemodel.nuspec"
+      ]
+    },
     "System.Reflection/4.3.0": {
       "sha512": "KMiAFoW7MfJGa9nDFNcfu+FpEdiHpWgTcS2HdMpDvt9saK3y/G4GwprPyzqjFH9NTaGPQeWNHU+iDlDILj96aQ==",
       "type": "package",
@@ -9459,6 +9686,57 @@
         "ref/xamarinwatchos10/_._",
         "system.reflection.4.3.0.nupkg.sha512",
         "system.reflection.nuspec"
+      ]
+    },
+    "System.Reflection.DispatchProxy/4.5.0": {
+      "sha512": "+UW1hq11TNSeb+16rIk8hRQ02o339NFyzMc4ma/FqmxBzM30l1c2IherBB4ld1MNcenS48fz8tbt50OW4rVULA==",
+      "type": "package",
+      "path": "system.reflection.dispatchproxy/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Reflection.DispatchProxy.dll",
+        "lib/netcoreapp2.0/System.Reflection.DispatchProxy.dll",
+        "lib/netstandard1.3/System.Reflection.DispatchProxy.dll",
+        "lib/netstandard2.0/System.Reflection.DispatchProxy.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netstandard1.3/System.Reflection.DispatchProxy.dll",
+        "ref/netstandard1.3/System.Reflection.DispatchProxy.xml",
+        "ref/netstandard1.3/de/System.Reflection.DispatchProxy.xml",
+        "ref/netstandard1.3/es/System.Reflection.DispatchProxy.xml",
+        "ref/netstandard1.3/fr/System.Reflection.DispatchProxy.xml",
+        "ref/netstandard1.3/it/System.Reflection.DispatchProxy.xml",
+        "ref/netstandard1.3/ja/System.Reflection.DispatchProxy.xml",
+        "ref/netstandard1.3/ko/System.Reflection.DispatchProxy.xml",
+        "ref/netstandard1.3/ru/System.Reflection.DispatchProxy.xml",
+        "ref/netstandard1.3/zh-hans/System.Reflection.DispatchProxy.xml",
+        "ref/netstandard1.3/zh-hant/System.Reflection.DispatchProxy.xml",
+        "ref/netstandard2.0/System.Reflection.DispatchProxy.dll",
+        "ref/netstandard2.0/System.Reflection.DispatchProxy.xml",
+        "ref/uap10.0.16299/System.Reflection.DispatchProxy.dll",
+        "ref/uap10.0.16299/System.Reflection.DispatchProxy.xml",
+        "ref/uap10.0.16300/System.Reflection.DispatchProxy.dll",
+        "ref/uap10.0.16300/System.Reflection.DispatchProxy.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/aot/lib/netcore50/System.Reflection.DispatchProxy.dll",
+        "runtimes/win-aot/lib/uap10.0.16299/System.Reflection.DispatchProxy.dll",
+        "runtimes/win/lib/uap10.0.16299/System.Reflection.DispatchProxy.dll",
+        "system.reflection.dispatchproxy.4.5.0.nupkg.sha512",
+        "system.reflection.dispatchproxy.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Reflection.Emit/4.3.0": {
@@ -10915,6 +11193,107 @@
         "version.txt"
       ]
     },
+    "System.ServiceModel.Http/4.6.0": {
+      "sha512": "TEe1dnAABRZFfGs868BYF1ix+L7z+FWbBqMtw6HgmIYGZeM9Of+A1QvnKsdvuVF6sy1T4r9usVEJJp3TqiMEyg==",
+      "type": "package",
+      "path": "system.servicemodel.http/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net46/System.ServiceModel.Http.dll",
+        "lib/net461/System.ServiceModel.Http.dll",
+        "lib/net461/System.ServiceModel.Http.pdb",
+        "lib/netcore50/System.ServiceModel.Http.dll",
+        "lib/netstandard1.3/System.ServiceModel.Http.dll",
+        "lib/netstandard2.0/System.ServiceModel.Http.dll",
+        "lib/netstandard2.0/System.ServiceModel.Http.pdb",
+        "lib/portable-net45+win8+wp8/_._",
+        "lib/win8/_._",
+        "lib/wp8/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net46/System.ServiceModel.Http.dll",
+        "ref/net461/System.ServiceModel.Http.dll",
+        "ref/netcore50/System.ServiceModel.Http.dll",
+        "ref/netstandard1.0/System.ServiceModel.Http.dll",
+        "ref/netstandard1.1/System.ServiceModel.Http.dll",
+        "ref/netstandard1.3/System.ServiceModel.Http.dll",
+        "ref/netstandard2.0/System.ServiceModel.Http.dll",
+        "ref/portable-net45+win8+wp8/_._",
+        "ref/win8/_._",
+        "ref/wp8/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.servicemodel.http.4.6.0.nupkg.sha512",
+        "system.servicemodel.http.nuspec"
+      ]
+    },
+    "System.ServiceModel.Primitives/4.6.0": {
+      "sha512": "LwFQqlATMZh5bdL2bZmEhuYGgTeb+GxT0WWkYqA2A+bywYM5Oq3wouHSigm1kRQwk4iQjrfsk5wxBdjmK1ozRQ==",
+      "type": "package",
+      "path": "system.servicemodel.primitives/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net46/System.ServiceModel.Primitives.dll",
+        "lib/net461/System.ServiceModel.Primitives.dll",
+        "lib/net461/System.ServiceModel.Primitives.pdb",
+        "lib/netcore50/System.ServiceModel.Primitives.dll",
+        "lib/netcoreapp2.1/System.ServiceModel.Primitives.dll",
+        "lib/netcoreapp2.1/System.ServiceModel.Primitives.pdb",
+        "lib/netcoreapp2.1/System.ServiceModel.dll",
+        "lib/netstandard1.3/System.ServiceModel.Primitives.dll",
+        "lib/netstandard2.0/System.ServiceModel.Primitives.dll",
+        "lib/netstandard2.0/System.ServiceModel.Primitives.pdb",
+        "lib/netstandard2.0/System.ServiceModel.dll",
+        "lib/portable-net45+win8+wp8/_._",
+        "lib/win8/_._",
+        "lib/wp8/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net46/System.ServiceModel.Primitives.dll",
+        "ref/net461/System.ServiceModel.Primitives.dll",
+        "ref/netcore50/System.ServiceModel.Primitives.dll",
+        "ref/netcoreapp2.1/System.ServiceModel.Primitives.dll",
+        "ref/netcoreapp2.1/System.ServiceModel.dll",
+        "ref/netstandard1.0/System.ServiceModel.Primitives.dll",
+        "ref/netstandard1.1/System.ServiceModel.Primitives.dll",
+        "ref/netstandard1.3/System.ServiceModel.Primitives.dll",
+        "ref/netstandard2.0/System.ServiceModel.Primitives.dll",
+        "ref/netstandard2.0/System.ServiceModel.dll",
+        "ref/portable-net45+win8+wp8/_._",
+        "ref/win8/_._",
+        "ref/wp8/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.servicemodel.primitives.4.6.0.nupkg.sha512",
+        "system.servicemodel.primitives.nuspec"
+      ]
+    },
     "System.Text.Encoding/4.3.0": {
       "sha512": "BiIg+KWaSDOITze6jGQynxg64naAPtqGHBwDrLaCtixsa5bKiR8dpPOHA7ge3C0JJQizJE+sfkz1wV+BAKAYZw==",
       "type": "package",
@@ -11837,7 +12216,8 @@
       "EntityFramework >= 6.2.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "SoapCore >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -11848,9 +12228,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pilig\\OneDrive\\Рабочий стол\\Проектный практикум\\practicum\\lab2\\lab2\\lab2.csproj",
-      "projectName": "lab2",
-      "projectPath": "C:\\Users\\pilig\\OneDrive\\Рабочий стол\\Проектный практикум\\practicum\\lab2\\lab2\\lab2.csproj",
+      "projectUniqueName": "C:\\Users\\pilig\\OneDrive\\Рабочий стол\\Проектный практикум\\practicum\\lab2\\lab2\\lab3.csproj",
+      "projectName": "lab3",
+      "projectPath": "C:\\Users\\pilig\\OneDrive\\Рабочий стол\\Проектный практикум\\practicum\\lab2\\lab2\\lab3.csproj",
       "packagesPath": "C:\\Users\\pilig\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\pilig\\OneDrive\\Рабочий стол\\Проектный практикум\\practicum\\lab2\\lab2\\obj\\",
       "projectStyle": "PackageReference",
@@ -11904,6 +12284,10 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "SoapCore": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           }
         },
         "imports": [

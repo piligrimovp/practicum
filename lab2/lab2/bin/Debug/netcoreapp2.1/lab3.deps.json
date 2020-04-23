@@ -22,7 +22,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "lab2/1.0.0": {
+      "lab3/1.0.0": {
         "dependencies": {
           "EntityFramework": "6.2.0",
           "Microsoft.AspNetCore.App": "2.1.1",
@@ -31,10 +31,10 @@
           "SoapCore": "1.0.0"
         },
         "runtime": {
-          "lab2.dll": {}
+          "lab3.dll": {}
         },
         "compile": {
-          "lab2.dll": {}
+          "lab3.dll": {}
         }
       },
       "EntityFramework/6.2.0": {
@@ -3316,7 +3316,7 @@
     }
   },
   "libraries": {
-    "lab2/1.0.0": {
+    "lab3/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

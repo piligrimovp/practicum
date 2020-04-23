@@ -12,6 +12,10 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using lab2.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.CodeAnalysis;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using SoapCore;
+using System.ServiceModel;
 
 namespace lab2
 {
@@ -27,6 +31,8 @@ namespace lab2
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.TryAddSingleton<ISampleService, SampleService>();
+            services.AddMvc();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             string connection = Configuration.GetConnectionString("DbConnection");
             services.AddDbContext<ApplicationContext>(options =>
@@ -47,6 +53,7 @@ namespace lab2
 
             app.UseHttpsRedirection();
             app.UseMvc();
+            app.UseSoapEndpoint<ISampleService>("/Service.asmx", new BasicHttpBinding(), SoapSerializer.XmlSerializer);
         }
     }
 }
