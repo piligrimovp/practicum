@@ -1,0 +1,7 @@
+[
+    {
+    	"url": "https://localhost:44351/api/values",
+        "response": "molodez,_vozmi_s_polki_piroshok",
+        "method": "GET"
+    }
+]
