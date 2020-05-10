@@ -1,0 +1,36 @@
+C:\Users\pilig\OneDrive\Рабочий стол\Проектный практикум\practicum\lab5\lab5\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\pilig\OneDrive\Рабочий стол\Проектный практикум\practicum\lab5\lab5\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\pilig\OneDrive\Рабочий стол\Проектный практикум\practicum\lab5\lab5\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\pilig\OneDrive\Рабочий стол\Проектный практикум\practicum\lab5\lab5\bin\Debug\netcoreapp2.1\lab5.deps.json
+C:\Users\pilig\OneDrive\Рабочий стол\Проектный практикум\practicum\lab5\lab5\bin\Debug\netcoreapp2.1\lab5.runtimeconfig.json
+C:\Users\pilig\OneDrive\Рабочий стол\Проектный практикум\practicum\lab5\lab5\bin\Debug\netcoreapp2.1\lab5.runtimeconfig.dev.json
+C:\Users\pilig\OneDrive\Рабочий стол\Проектный практикум\practicum\lab5\lab5\bin\Debug\netcoreapp2.1\lab5.dll
+C:\Users\pilig\OneDrive\Рабочий стол\Проектный практикум\practicum\lab5\lab5\obj\Debug\netcoreapp2.1\lab5.csprojAssemblyReference.cache
+C:\Users\pilig\OneDrive\Рабочий стол\Проектный практикум\practicum\lab5\lab5\obj\Debug\netcoreapp2.1\lab5.RazorAssemblyInfo.cache
+C:\Users\pilig\OneDrive\Рабочий стол\Проектный практикум\practicum\lab5\lab5\obj\Debug\netcoreapp2.1\lab5.RazorAssemblyInfo.cs
+C:\Users\pilig\OneDrive\Рабочий стол\Проектный практикум\practicum\lab5\lab5\obj\Debug\netcoreapp2.1\lab5.AssemblyInfoInputs.cache
+C:\Users\pilig\OneDrive\Рабочий стол\Проектный практикум\practicum\lab5\lab5\obj\Debug\netcoreapp2.1\lab5.AssemblyInfo.cs
+C:\Users\pilig\OneDrive\Рабочий стол\Проектный практикум\practicum\lab5\lab5\obj\Debug\netcoreapp2.1\lab5.RazorTargetAssemblyInfo.cache
+C:\Users\pilig\OneDrive\Рабочий стол\Проектный практикум\practicum\lab5\lab5\obj\Debug\netcoreapp2.1\lab5.genruntimeconfig.cache
+C:\Users\pilig\OneDrive\Рабочий стол\Проектный практикум\practicum\lab5\lab5\bin\Debug\netcoreapp2.1\lab5.pdb
+C:\Users\pilig\OneDrive\Рабочий стол\Проектный практикум\practicum\lab5\lab5\obj\Debug\netcoreapp2.1\lab5.csproj.CoreCompileInputs.cache
+C:\Users\pilig\OneDrive\Рабочий стол\Проектный практикум\practicum\lab5\lab5\obj\Debug\netcoreapp2.1\lab5.dll
+C:\Users\pilig\OneDrive\Рабочий стол\Проектный практикум\practicum\lab5\lab5\obj\Debug\netcoreapp2.1\lab5.pdb
+E:\practicum\lab5\lab5\bin\Debug\netcoreapp2.1\appsettings.Development.json
+E:\practicum\lab5\lab5\bin\Debug\netcoreapp2.1\appsettings.json
+E:\practicum\lab5\lab5\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+E:\practicum\lab5\lab5\bin\Debug\netcoreapp2.1\lab5.deps.json
+E:\practicum\lab5\lab5\bin\Debug\netcoreapp2.1\lab5.runtimeconfig.json
+E:\practicum\lab5\lab5\bin\Debug\netcoreapp2.1\lab5.runtimeconfig.dev.json
+E:\practicum\lab5\lab5\bin\Debug\netcoreapp2.1\lab5.dll
+E:\practicum\lab5\lab5\bin\Debug\netcoreapp2.1\lab5.pdb
+E:\practicum\lab5\lab5\obj\Debug\netcoreapp2.1\lab5.csprojAssemblyReference.cache
+E:\practicum\lab5\lab5\obj\Debug\netcoreapp2.1\lab5.csproj.CoreCompileInputs.cache
+E:\practicum\lab5\lab5\obj\Debug\netcoreapp2.1\lab5.RazorAssemblyInfo.cache
+E:\practicum\lab5\lab5\obj\Debug\netcoreapp2.1\lab5.RazorAssemblyInfo.cs
+E:\practicum\lab5\lab5\obj\Debug\netcoreapp2.1\lab5.AssemblyInfoInputs.cache
+E:\practicum\lab5\lab5\obj\Debug\netcoreapp2.1\lab5.AssemblyInfo.cs
+E:\practicum\lab5\lab5\obj\Debug\netcoreapp2.1\lab5.RazorTargetAssemblyInfo.cache
+E:\practicum\lab5\lab5\obj\Debug\netcoreapp2.1\lab5.dll
+E:\practicum\lab5\lab5\obj\Debug\netcoreapp2.1\lab5.pdb
+E:\practicum\lab5\lab5\obj\Debug\netcoreapp2.1\lab5.genruntimeconfig.cache
